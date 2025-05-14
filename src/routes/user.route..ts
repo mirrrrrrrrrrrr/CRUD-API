@@ -23,17 +23,19 @@ export const userRouter = (
     getUserById(res, userId);
     return true;
   }
+  // POST
   if (req.url === "/api/users" && req.method === "POST") {
     createUser(req, res);
     return true;
   }
+  // PUT
   if (req.url?.startsWith("/api/users") && req.method === "PUT") {
     const id = req.url.split("/")[3];
 
     updateUser(req, res, id);
     return true;
   }
-
+  // DELETE
   if (req.url?.startsWith("/api/users") && req.method === "DELETE") {
     const id = req.url.split("/")[3];
 
