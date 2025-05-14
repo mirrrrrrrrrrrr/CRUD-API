@@ -1,0 +1,33 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest --silent",
+    "start": "node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "start:prod": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "node.js",
+    "typescript",
+    "crud"
+  ],
+  "author": "Mirsoli Mirsultonov <mirrrrrr@yahoo.com>",
+  "license": "MIT",
+  "description": "simple CRUD API using in-memory database",
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "eslint": "^9.26.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}
