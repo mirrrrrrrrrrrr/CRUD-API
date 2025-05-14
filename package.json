@@ -8,7 +8,7 @@
     "test": "jest --silent",
     "start": "node dist/src/index.js",
     "start:dev": "ts-node-dev src/index.ts",
-    "start:prod": "ts-node src/index.ts",
+    "start:prod": "tsc && node --env-file=.env dist/index.js",
     "build": "tsc"
   },
   "keywords": [

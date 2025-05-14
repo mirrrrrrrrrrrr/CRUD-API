@@ -9,7 +9,7 @@ export const getUsers = async (res: ServerResponse) => {
 
 export const getUserById = async (
   res: ServerResponse,
-  userId: string | undefined
+  userId: string | undefined,
 ) => {
   const user = Users.find((u) => u.id === userId);
 
@@ -38,7 +38,7 @@ export const createUser = (req: IncomingMessage, res: ServerResponse) => {
 export const updateUser = (
   req: IncomingMessage,
   res: ServerResponse,
-  id: string | undefined
+  id: string | undefined,
 ) => {
   let body = "";
   req.on("data", (chunk) => (body += chunk));

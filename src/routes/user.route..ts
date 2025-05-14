@@ -9,7 +9,7 @@ import {
 
 export const userRouter = (
   req: IncomingMessage,
-  res: ServerResponse
+  res: ServerResponse,
 ): boolean => {
   // GET user
   if (req.url === "/api/users" && req.method === "GET") {
